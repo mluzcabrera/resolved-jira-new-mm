@@ -4,6 +4,8 @@ name: call UPLOAD BINARY RW
 on:
   workflow_dispatch:
 jobs:
+    call_rw:
+      uses: mluzcabrera/reusableworkflowsrepo/.cloudbees/workflows/rw_upload_binary.yaml
     build:
       steps:
         - name: Get source code
